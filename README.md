@@ -15,5 +15,9 @@ calendar.css -> :root
  3. `calendar.css` подключаем в `<head></head>`.
  4. `calendar.js` подключаем перед `</body>`.
 
+## План:
+ - [ ] Выбор месяца по нажатию
+ - [ ] Выбор года по нажатию
+
 ### Screenshot
 ![Calendar screenshot](https://github.com/demid088/Calendar/raw/master/calendar.jpg)
