@@ -33,6 +33,10 @@
   --border-width-days: 1.8px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .calendar {
   font-family: 'Quicksand', sans-serif;
   display: none;
@@ -41,6 +45,7 @@
   left: 0;
   width: var(--width-calendar);
   height: auto;
+  color: var(--color-text);
   background-color: var(--color-main);
   box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
 }
@@ -63,6 +68,7 @@
   align-items: center;
   width: 12%;
   height: 100%;
+  margin: 0 4%;
   font-size: var(--font-size-arrow);
   cursor: pointer;
   transition: 0.2s;
@@ -73,18 +79,23 @@
 }
 
 .date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-grow: 1;
 }
 
 .date h1 {
+  margin: 0;
+  margin-bottom: var(--mb-month);
   font-size: var(--font-size-month);
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing);
-  margin-bottom: var(--mb-month);
 }
 
 .date p {
+  margin: 0;
   font-size: var(--font-size-year);
 }
 
